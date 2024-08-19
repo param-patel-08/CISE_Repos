@@ -1,4 +1,4 @@
-mport React from "react";
+import React from "react";
 import { useForm } from "react-hook-form";
 export default function SubmissionForm() {
 const { register, handleSubmit } = useForm();
