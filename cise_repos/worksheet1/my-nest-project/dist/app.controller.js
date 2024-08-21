@@ -17,7 +17,7 @@ let AppController = class AppController {
         this.appService = appService;
     }
     getHello() {
-        return 'Welcome to my custom NestJS application!';
+        return this.getHello();
     }
 };
 exports.AppController = AppController;
