@@ -6,25 +6,26 @@ interface SortableTableProps {
 }
 
 const SortableTable: React.FC<SortableTableProps> = ({ headers, data }) => (
-  <table>
-    <thead>
-      <tr>
-        {headers.map((header) => (
-          <th key={header.key}>{header.label}</th>
-        ))}
-      </tr>
-    </thead>
-    <tbody>
-    {data.map((row, i) => (
-        <tr key={i}>
+  <div className="table-container">
+    <table className="table table-striped table-hover">
+      <thead>
+        <tr>
           {headers.map((header) => (
-            <td key={header.key}>{row[header.key]}</td>
+            <th key={header.key}>{header.label}</th>
           ))}
         </tr>
-      ))}
-    </tbody>
-  </table>
+      </thead>
+      <tbody>
+        {data.map((row, i) => (
+          <tr key={i}>
+            {headers.map((header) => (
+              <td key={header.key}>{row[header.key]}</td>
+            ))}
+          </tr>
+        ))}
+      </tbody>
+    </table>
+  </div>
 );
 
 export default SortableTable;
-

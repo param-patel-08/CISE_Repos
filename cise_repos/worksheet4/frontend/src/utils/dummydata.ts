@@ -48,6 +48,16 @@ const data = [
       doi: "https://doi.org/10.1109/esem.2007.35",
       claim: "code quality improvement",
       evidence: "weak against"
+    },
+    {
+      _id: "6",
+      title: "how to win friends and influence people",
+      authors: "Dale Carnegie",
+      source: "fff",
+      pubyear: "2000",
+      doi: "2005",
+      claim: "code quality improvement",
+      evidence: "weak against"
     }
   ];
   
